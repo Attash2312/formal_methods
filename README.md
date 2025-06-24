@@ -1,6 +1,6 @@
 # formal_methods
 
-# Z Notation & VDM-SL Cheatsheet (Pro Edition)
+# Z Notation & VDM-SL Cheatsheet
 
 ---
 
