@@ -10,7 +10,7 @@
 
 ## Quiz Questions
 
-### Quiz #1: Car Park System
+### Quiz #1: Car Park System (Z Notation)
 **CLO:** 2 - Apply the techniques used to formally specify software  
 **Bloom Taxonomy Level:** Applying  
 **Marks:** 5 + 5 = 10
@@ -45,7 +45,7 @@ Depart
 
 ---
 
-### Quiz #2: Class Manager Assistant
+### Quiz #2: Class Manager Assistant (VDM Notation)
 **CLO:** 3 - Apply the techniques used to formally design and verify whether a software product satisfies its specifications  
 **Bloom Taxonomy Level:** Applying  
 **Marks:** 10
@@ -93,7 +93,7 @@ Operation Test()
 
 ---
 
-### Quiz #3: Library Manager Assistant
+### Quiz #3: Library Manager Assistant (VDM Notation)
 **CLO:** 3  
 **Bloom Taxonomy Level:** Applying  
 **Total Marks:** 10
@@ -150,7 +150,7 @@ Operation GetBorrowCount(): integer
 
 ## 2022 Spring Exam
 
-### Question 1: University System
+### Question 1: University System (Z Notation)
 **CLO:** 2  
 **Marks:** 3+3+4=10
 
@@ -198,7 +198,7 @@ personSubjects
   subj! = { s | pers? |-> s ∈ enrolments }
 ```
 
-### Question 2: Seat Booking System
+### Question 2: Seat Booking System (Z Notation)
 **CLO:** 2  
 **Marks:** 3+3+4=10
 
@@ -213,7 +213,7 @@ SeatBooking
 
 ## 2022 Exam
 
-### Question 01: Birthday Book
+### Question 01: Birthday Book (Z Notation)
 **Marks:** 6+4=10  
 **CLO:** 2
 
@@ -248,7 +248,7 @@ FindBirthday
   date! = birthday(name?)
 ```
 
-### Question 2: Airport System
+### Question 2: Airport System (Z Notation)
 **Marks:** 10  
 **CLO:** 3
 
@@ -299,7 +299,7 @@ numberWaiting
   count! = #permission - #landed
 ```
 
-### Question 03: Robot System
+### Question 03: Robot System (VDM Notation)
 **Marks:** 1+1+2*4=10  
 **CLO:** 4
 
@@ -349,7 +349,7 @@ setMode(m?: Mode)
   post mode' = m?
 ```
 
-### Question 04: Disk Scanner
+### Question 04: Disk Scanner (VDM Notation)
 **Marks:** 1+1+2*4=10  
 **CLO:** 4
 
@@ -405,7 +405,7 @@ getBadSectors(t?: ℤ) secs!: set of ℤ
 
 ## 2023 Exam
 
-### Question 1: Queue System
+### Question 1: Queue System (VDM Notation)
 **Marks:** 3+3+4=10  
 **CLO:** 3
 
@@ -457,12 +457,12 @@ isEmpty() b!: Boolean
   post b! = (queue = [])
 ```
 
-### Question 2: University System
+### Question 2: University System (Z Notation)
 **CLO:** 3, 4
 
 *Same as Question 1 from 2022 Spring Exam*
 
-### Question 3: Hotel Info Desk
+### Question 3: Hotel Info Desk (VDM Notation)
 **Marks:** 4+6=10  
 **CLO:** 3
 
@@ -503,7 +503,7 @@ RoomOccupied()
   post vacant' = vacant - 1
 ```
 
-### Question 4: Airport System
+### Question 4: Airport System (Z Notation)
 **CLO:** 3, 4
 
 *Same as Question 2 from 2022 Exam*
@@ -528,12 +528,17 @@ RoomOccupied()
 - **Delta (Δ):** Indicates state change
 - **Xi (Ξ):** Indicates no state change (read-only)
 - **Input/Output:** `?` for input, `!` for output
+- **Set Operations:** ℙ (power set), ∪ (union), ∩ (intersection), \ (difference)
+- **Relations:** ↦ (total function), ↣ (partial function)
 
 ### VDM Notation
 - **State:** `State` keyword with variables and invariants
 - **Operations:** `Operation` keyword with pre/post conditions
 - **External Variables:** `ext wr` (write), `ext rd` (read)
 - **Initialization:** `init` keyword
+- **Types:** `types` keyword for type declarations
+- **Sequences:** `seq of` for sequence types
+- **Sets:** `set of` for set types
 
 ### Common Patterns
 1. **Resource Management:** Capacity limits, counting
@@ -544,4 +549,4 @@ RoomOccupied()
 
 ---
 
-*This document contains comprehensive solutions to formal methods past papers and quizzes, covering Z notation and VDM specifications.*
+*This document contains comprehensive solutions to formal methods past papers and quizzes, covering Z notation and VDM specifications with proper syntax for each notation.*
